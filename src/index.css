@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Prevent scrollbar from background animation */
+}
+
+.app-container-new {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: backgroundShift 15s ease infinite alternate; /
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.todo-card-new {
+  background-color: rgba(255, 255, 255, 0.9); 
+  backdrop-filter: blur(10px); /* Glassmorphism or bit of guassian blurr effect */
+  border-radius: 20px; 
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px; 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  transition: transform 0.3s ease-out;
+}
+
+/* Lift effect on hover */
+.todo-card-new:hover {
+  transform: translateY(-5px); 
+}
+
+.header-title-new {
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  text-align: center;
+  color: #333; 
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.03em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
+}
+
+.add-todo-form-new {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.add-todo-input-new {
+  flex-grow: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #ccc; 
+  border-radius: 12px; 
+  outline: none;
+  color: #444;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-todo-input-new::placeholder {
+  color: #999;
+}
+
+.add-todo-input-new:focus {
+  border-color: #aa96fa; /* Keep the updated focus border color */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.05); /* Updated focus box-shadow */
+}
+
+.add-todo-button-new {
+  padding: 0.8rem 1.5rem;
+  background: rgba(106, 130, 251, 0.8); 
+  color: #ffffff; 
+  border-radius: 12px;
+  border: 1px solid rgba(106, 130, 251, 0.6); /* Subtle border matching the color */
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Standard button shadow */
+}
+
+.add-todo-button-new:hover {
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  background: rgba(106, 130, 251, 1); /
+}
+
+.add-todo-button-new:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); 
+  background: rgba(106, 130, 251, 0.7); /
+}
+
+.todo-list-new {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; /* Closer spacing */
+}
+
+.todo-item-new {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-radius: 12px; /* Consistent rounded corners */
+  background-color: #f8f8f8; /* Lighter background for items */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle item shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.todo-item-new:hover {
+  transform: translateX(5px); /* Slight slide effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.todo-item-new.completed {
+  background-color: #e6ffe6; /* Light green for completed */
+  border-color: #c8ffc8;
+  opacity: 0.8;
+}
