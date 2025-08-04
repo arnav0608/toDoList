@@ -236,5 +236,5 @@ const ToDoItem = ({ todo, toggleComplete, deleteTodo, toggleEdit, saveEdit }) =>
   );
 };
 
-// Export the main App component as default
+// Export the main App component
 export default App;
