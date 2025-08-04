@@ -1,12 +1,44 @@
 # React + Vite
+Daily Planner – To-Do List App
+-------------------------------
+A stylish and responsive To-Do List built using React, Vite, and custom CSS animations. This app helps users organize tasks with clarity, elegance, and ease.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Features
+------------
+- Add, edit, and delete tasks with intuitive controls
+- Tasks are persisted using localStorage
+- Inline editing via double-click or button press
+- Responsive design and animated UI using CSS
+- ARIA labels for accessibility and keyboard-friendly interaction
+- Subtle transitions and hover effects for an elegant fee
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Styling Highlights
+-------------------
+- Background gradient animations with keyframes
+- Glassmorphism effects via backdrop-filter and semi-transparent cards
+- Interactive checkboxes with custom tick styling
+- Lift and slide-in animation effects for cards and buttons
+- Responsive adjustments for smaller screens with media queries
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Installation
+# fork the repository
+fork this repository
+cd todo-react-app
+
+# Install dependencies
+npm install
+
+# Run Locally
+
+on terminal
+npm run dev
+Visit http://localhost:5173 in your browser to view the app.
+
+and Ctrl + C for terminate vite server.
+
+
+
+
